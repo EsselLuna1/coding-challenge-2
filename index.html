@@ -10,39 +10,53 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/index.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="wrap"> 
+    <div class="innerWrap">
+      <div class="ratingComponent">
+        <!-- Rating state start -->
+        <section class="rating">
+          <div class="wrap">
+            <div class="star">
+              <img src="images/icon-star.svg" alt="">
+            </div>
+            <h2 class="title"> How did we do?</h2>
+            <p class="text01">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <form class="ratingForm">
+              <div class="ratingWrap" id="options">
+                <label for="rate1" class="num">1</label>
+                <input type="radio" name="rate" id="rate1" value="1" />
+                <label for="rate2" class="num">2</label>
+                <input type="radio" name="rate" id="rate2" value="2" />
+                <label for="rate3" class="num">3</label>
+                <input type="radio" name="rate" id="rate3" value="3" />
+                <label for="rate4" class="num">4</label>
+                <input type="radio" name="rate" id="rate4" value="4" />
+                <label for="rate5" class="num">5</label>
+                <input type="radio" name="rate" id="rate5" value="5" />
+              </div>
+              <input type="submit" class="btn" value="Submit" id="submitBtn" />
+            </form>
+          </div>
+        </section>
+        <!-- Thank you state start -->
+        <section class="thankyou hidden">
+          <div class="wrap">
+            <div class="tyImg">
+              <img src="images/illustration-thank-you.svg" alt="">
+            </div>
+            <div class="rate">
+              <p class="rateTxt"></p>
+            </div>
+            <h2 class="title">Thank you!</h2>
+            <p class="text01">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+          </div>
+        </section>
+      </div>
+    </div> 
+  </main>
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Essel Luna</a>.
