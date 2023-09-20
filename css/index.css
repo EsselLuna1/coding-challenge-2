@@ -48,11 +48,8 @@ common
     display: none;
   }
 }
-.rating {
-  display: none;
-}
 .hidden {
-  display: block;
+  display: none;
 }
 .title {
   margin: 34px 0 0;
@@ -80,26 +77,35 @@ rating component
   width: 45.5px;
   border-radius: 50px;
 }
-.ratingWrap {
+.ratingForm {
   display: flex;
   justify-content: space-between;
+  align-items: center; 
   flex-wrap: wrap;
 }
-.num {
+.option{
   background-color: hsl(213, 19%, 23%);
   height: 48.5px;
   width: 48.5px;
   border-radius: 50px;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
-  color: hsl(217, 12%, 63%);
+  font-size: 17px;
   line-height: 3;
   cursor: pointer;
-  font-size: 17px;
+  color: hsl(217, 12%, 63%);
+  transition: all 500ms;
 }
-.num:hover{
+.option:hover{
   background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+input {
+  display: none;
+}
+input:checked + label{
+  background-color: hsl(25, 97%, 53%);;
   color: hsl(0, 0%, 100%);
 }
 input[type=radio]{
@@ -107,32 +113,43 @@ input[type=radio]{
   position: fixed;
   width: 0;
 }
-.btn{
-  width: 100%;
-  padding: 15px;
-  margin-top: 33px;
-  border-radius: 21px;
-  text-transform: uppercase;
-  /* font-weight: bold; */
-  letter-spacing: 2px;
+button{
   border: none;
   background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  height: 2.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
   color: hsl(0, 0%, 100%);
-  cursor: pointer;
+  letter-spacing: 2px;
 }
-.btn:hover{
-  background-color: hsl(0, 0%, 100%);
+button:hover{
   color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.5s;
 }
-
 .tyImg {
   margin: 12px auto;
   display: flex;
   justify-content: center;
 }
-.thankyou .title {
+.thankYou .title {
   text-align: center;
 }
-.thankyou .text01 {
+.thankYou .text01 {
   text-align: center;
+}
+.selectRate {
+  margin-top: 1.5rem;
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 15px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rateTxt {
+  color: hsl(25, 97%, 53%);
 }
