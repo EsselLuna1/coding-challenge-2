@@ -18,9 +18,14 @@ body, html {
   display: none;
 }
 .wrap .innerWrap {
+  display: flex;
   max-width: 1440px;
   width: 100%;
-  margin: 195px auto;
+  height: 95vh;
+  margin: 21px auto 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .spOnly {
   display: none;
@@ -31,7 +36,7 @@ body, html {
 @media screen and (max-width: 768px) {
   .wrap .innerWrap {
     width: 100%;
-    margin: 153px auto;
+    margin: 87px auto;
     padding: 0 24px;
     box-sizing: border-box;
   }
@@ -104,7 +109,6 @@ rating component
   background-color: hsl(213, 19%, 23%);
   color: hsl(217, 12%, 63%);
   font-size: 17px;
-  line-height: 3;
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -193,9 +197,9 @@ thank you
     width: 50%;
   }
   .selectRate {
+    width: 60%;
     margin: 26px auto 0;
     padding: 8px 2px;
-    width: 60%;
   }
   .rateTxt {
     font-size: 14px;
